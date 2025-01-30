@@ -38,29 +38,32 @@
         <label for="lengthContract50">50 Years</label>
       </div>
 
-      <div>
-        <label for="fullname">Fullname</label>
-        <input
-          type="text"
-          name="fullname"
-          id="fullname"
-          required
-          list="commonNames"
-        />
-
-        <datalist id="commonNames">
-          <option value="Scappy">Scappy</option>
-          <option value="Meowth">Meowth</option>
-          <option value="Human">Human</option>
-        </datalist>
-      </div>
-
-      <select name="title" id="title">
-        <option value="Barbarian">Barbarian</option>
-        <option value="Jester">Jester</option>
-        <option value="My mom">My mom</option>
-        <option value="Janitor">Janitor</option>
-      </select>
+      <fieldset>
+        <legend>Personal Info</legend>
+        <div>
+          <label for="fullname">Fullname</label>
+          <input
+            type="text"
+            name="fullname"
+            id="fullname"
+            required
+            list="commonNames"
+          />
+          <datalist id="commonNames">
+            <option value="Scappy">Scappy</option>
+            <option value="Meowth">Meowth</option>
+            <option value="Human">Human</option>
+          </datalist>
+        </div>
+  
+        <select name="title" id="title">
+          <option value="Barbarian">Barbarian</option>
+          <option value="Jester">Jester</option>
+          <option value="My mom">My mom</option>
+          <option value="Janitor">Janitor</option>
+          <option value="Other">Other</option>
+        </select>
+      </fieldset>
 
       <div>
         <input type="submit" value="E-Sign" />
